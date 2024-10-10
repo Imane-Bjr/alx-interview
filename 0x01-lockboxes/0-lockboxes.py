@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Unlock all boxes by collecting keys from each accessible box."""
 
+
 def canUnlockAll(boxes):
     """
     Determines if all boxes can be unlocked.
