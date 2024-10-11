@@ -5,9 +5,9 @@
 def canUnlockAll(boxes):
     """
     Determines if all boxes can be unlocked.
-    Start with the key to box 0, 
+    Start with the key to box 0,
     then collect keys from accessible boxes.
-    Continue unlocking boxes with the collected 
+    Continue unlocking boxes with the collected`
     keys until no more boxes can be unlocked.
     Return True if all boxes are unlocked, otherwise False.
     """
