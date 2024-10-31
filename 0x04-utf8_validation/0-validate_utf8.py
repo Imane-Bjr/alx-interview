@@ -1,16 +1,9 @@
 #!/usr/bin/python3
-"""
-A script to determines if a given data
-set represents a valid UTF-8 encoding.
-"""
+"""valid UTF-8 encoding."""
 
 
 def validUTF8(data):
-    """Return True if data is a valid UTF-8 encoding, else return False.
-
-    Args:
-        data (List[int]): list of integers representing bytes in the data set.
-    """
+    """Return True if data is a valid UTF-8 encoding, else False"""
     count = 0
     for byte in data:
         if count == 0:
@@ -26,4 +19,5 @@ def validUTF8(data):
             if (byte >> 6) != 0b10:
                 return False
             count -= 1
+
     return count == 0
